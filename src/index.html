@@ -1,0 +1,11 @@
+---
+layout: layout.njk
+---
+<ul>
+  {% for job in collections.jobs | reverse %}
+    <li>
+      <div><a href="{{ job.url }}">{{ job.data.title }}</a></div>
+      <small>{{ job.data.location }}</small>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+publish_mode: editorial_workflow
+media_folder: "uploads"
+collections:
+  - name: "jobs"
+    label: "Jobs"
+    folder: "jobs"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
