@@ -5,7 +5,7 @@ media_folder: "uploads"
 collections:
   - name: "jobs"
     label: "Jobs"
-    folder: "jobs"
+    folder: "src/jobs"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
